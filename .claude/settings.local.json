@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite build)",
+      "Bash(node_modules/.bin/tsc:*)",
+      "Bash(node_modules/.bin/vite build:*)",
+      "Bash(npm --prefix C:/Users/Nick/Projects/kcyn run build)",
+      "Bash(npm --prefix C:/Users/Nick/Projects/kcyn install:*)"
+    ]
+  }
+}
