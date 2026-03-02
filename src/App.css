@@ -26,11 +26,28 @@
   color: #e8e8e8;
   margin: 0;
   text-shadow: 0 0 40px rgba(255, 255, 200, 0.15);
-  transition: text-shadow 0.3s ease;
+  transition: text-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: default;
+}
+
+.name::after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  color: #e8e8e8;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .name:hover {
   text-shadow: 0 0 60px rgba(255, 255, 200, 0.25);
+  color: transparent;
+}
+
+.name:hover::after {
+  opacity: 1;
 }
 
 .tagline {

@@ -7,11 +7,6 @@
 
   color: rgba(255, 255, 255, 0.87);
 
-  background-image: url('assets/outerwall_background.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +25,6 @@ body {
 
 .main {
   background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(8px);
   min-height: 100vh;
   min-width: 100vw;
   position: fixed;

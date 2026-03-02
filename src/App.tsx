@@ -1,13 +1,14 @@
 
 import './App.css'
+import { BackgroundCanvas } from './BackgroundCanvas'
 
 function App() {
   return (
+    <>
+    <BackgroundCanvas />
     <div className='main'>
       <div className='content'>
-        <h1 className='name'>kcyn</h1>
-        <p className='tagline'>building things</p>
-        <p className='detail'>asu computer science '24</p>
+        <h1 className='name' data-hover='nick'>kcyn</h1>
 
         <div className='links'>
           <a
@@ -30,6 +31,7 @@ function App() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
