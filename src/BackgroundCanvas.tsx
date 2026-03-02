@@ -106,7 +106,7 @@ export function BackgroundCanvas() {
 
   useEffect(() => {
     const canvas = canvasRef.current!
-    const gl = canvas.getContext('webgl2')
+    const gl = canvas.getContext('webgl2')!
     if (!gl) {
       console.error('WebGL2 not supported')
       return
