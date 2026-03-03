@@ -1,26 +1,9 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 2rem;
-  animation: fadeIn 1s ease-out;
-}
-
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .name {
-  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 0.15em;
   color: #e8e8e8;
@@ -48,53 +31,4 @@
 
 .name:hover::after {
   opacity: 1;
-}
-
-.tagline {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0.5rem;
-  letter-spacing: 0.2em;
-  font-weight: 300;
-}
-
-.detail {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.35);
-  margin-top: 0.25rem;
-  letter-spacing: 0.15em;
-  font-weight: 300;
-}
-
-.links {
-  margin-top: 3rem;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  font-size: 0.875rem;
-  letter-spacing: 0.1em;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  transition: all 0.3s ease;
-}
-
-.link:hover {
-  color: rgba(255, 255, 255, 0.9);
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.06);
-  transform: translateY(-2px);
-}
-
-.link svg {
-  width: 18px;
-  height: 18px;
 }

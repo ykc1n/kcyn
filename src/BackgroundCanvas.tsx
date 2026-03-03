@@ -223,28 +223,12 @@ export function BackgroundCanvas() {
   return (
     <>
       <div
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '50%',
-          zIndex: -1,
-          backgroundImage: `url(${starImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+        className="fixed inset-x-0 top-0 h-1/2 -z-1 blur-sm scale-105 bg-cover bg-bottom"
+        style={{ backgroundImage: `url(${starImage})` }}
       />
       <canvas
         ref={canvasRef}
-        style={{
-          position: 'fixed',
-          top: '50%',
-          left: 0,
-          width: '100%',
-          height: '50%',
-          zIndex: -1,
-        }}
+        className="fixed left-0 top-1/2 w-full h-1/2 -z-1 blur-sm scale-105"
       />
     </>
   )
